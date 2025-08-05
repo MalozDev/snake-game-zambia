@@ -1,0 +1,75 @@
+/* SnakeGame.module.css */
+
+.container {
+  padding: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2e7d32; /* dark green */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  justify-content: center;
+  gap: 2px;
+  touch-action: none;
+  border: 3px solid #4caf50;
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.snakeCell {
+  background-color: #4caf50; /* green */
+  box-shadow: inset 0 0 6px #2e7d32;
+}
+
+.foodCell {
+  background-color: #d32f2f; /* red */
+  box-shadow: 0 0 8px #f44336;
+}
+
+.controls {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:active {
+  background-color: #388e3c;
+}
+
+.instructions {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+}
